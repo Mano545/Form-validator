@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="form-container">
+      <h2> Interactive Form Validation</h2>
+    </div> 
+  </header>
+  <div class="container">
+    <form id="myForm">
+      <div class="form-control">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="name" placeholder="eg. Kewin" />
+        <span class="error" id="nameError"></span>
+      </div>
+      <div class="form-control">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" placeholder="eg. Kewin@gmail.com" />
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="form-control">
+        <label for="phone">Phone*:</label>
+        <input type="tel" id="phone" name="phone" placeholder="eg.8789356474 " />
+        <span class="error" id="phoneError"></span>
+      </div>
+      <div class="form-control">
+        <label for="date">Enter a DOB (MM/DD/YYYY)*:</label>
+        <input type="text" id="date" name="date" placeholder="eg. 12/28/2005 ">
+        <span class="error" id="dateError"></span>
+      </div>
+      <div class="form-control">
+        <label for="date">Select Your Course</label>
+        <select>
+          <option value="Course">Course</option>
+          <option value="be">BE</option>
+          <option value="MBA">MBA</option>
+          <option value="Mtech">M Tech</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="date">Select Your Department</label>
+        <select>
+          <option value="Dept">Dept</option>
+          <option value="IT">IT</option>
+          <option value="CSE">CSE</option>
+          <option value="AIDS">AIDS</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="CYBER">CYBER</option>
+          <option value="ETE">ETE</option>
+        </select>
+      </div>
+      <div class="form-control-clg">
+        <label for="clgname">Collage Name</label>
+        <input type="text" id="clgname" name="clgname"/>
+      </div>
+      <div class="form-control-clg">
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+      </div>
+    
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes" required>
+      <label for="subscribe"><span style="color: #fff;"> I Agree to the above information</span></label>
+      <br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset Form">
+  </div>
+  <script src="javasrc.js"></script>
+
+</body>
+
+</html>

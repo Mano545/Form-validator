@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url('https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_640.png');
+}
+
+.container {
+  background-color: #4b4949;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px black;
+}
+
+.form-container {
+  text-align: center;
+  color: rgb(12, 12, 11);
+}
+
+form {
+  border: 1px solid #4b4949;
+  padding: 30px;
+  background-color: #4b4949;
+}
+
+.form-control select{
+  border: 2px solid #645757;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+.form-control input{
+  border: 2px solid #645757;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px;
+  width: 450px;
+  margin-bottom: 10px;
+}
+.form-control-clg input {
+  border: 2px solid #645757;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.form-control label{
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-control-clg label {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: rgb(238, 73, 73);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  .form-control select{
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .form-control input{
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .form-control-clg input {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+}
